@@ -1,0 +1,7 @@
+# Ignorar el archivo de configuración
+config.js
+
+# Otros archivos y carpetas que quieras ignorar
+node_modules/
+dist/
+.env

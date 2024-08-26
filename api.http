@@ -1,0 +1,49 @@
+
+
+### Request  GET ALL USERS
+GET http://localhost:1234/users   
+
+### Request GET USER BY ID
+GET http://localhost:1234/users/ef37823c-6177-11ef-bddf-2cf05d94b0d7
+
+### Request GET USER BY EMAIL
+GET  http://localhost:1234/login/elvispino@gmail.com
+
+
+### Request POST LOGIN
+POST http://localhost:1234/login
+Content-Type: application/json
+
+{
+    "email": "elvispino@gmail.com",
+    "password": "123456"
+}
+
+### Request POST USER 
+POST http://localhost:1234/users
+Content-Type: application/json
+
+{
+    "name": "Elvis Pino",
+    "email": "elvispino@gmail.com",
+    "password": "123456",
+    "dob": "1986-11-30",
+    "gender": "male"
+}
+
+
+### Request PATCH USER
+PATCH  http://localhost:1234/users/ef37823c-6177-11ef-bddf-2cf05d94b0d7
+Content-Type: application/json
+
+{
+    "name": "Elvis Pino",
+    "email": "elvispino@gmail.com",
+    "password": "123456",
+    "dob": "1986-11-30",
+    "gender": "male"
+}
+
+
+### Request DELETE USER
+DELETE http://localhost:1234/users/ef37823c-6177-11ef-bddf-2cf05d94b0d7
